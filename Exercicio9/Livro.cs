@@ -14,8 +14,8 @@ namespace Exercicio9
 
         public Livro(string titulo, string autor, float valor) 
         {
-            this.titulo = titulo;
-            this.autor = autor;
+            this.titulo = titulo ?? throw new ArgumentNullException(nameof(titulo));
+            this.autor = autor ?? throw new ArgumentNullException(nameof(autor));
             this.valor = valor;
         }
         public override string ToString()
