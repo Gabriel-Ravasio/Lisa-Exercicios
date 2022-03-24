@@ -8,13 +8,10 @@ namespace Exercicio9
     {
         static void Main(string[] args)
         {
-
-            var livro = new Livro("as Aventuras de Josiscleiton", "Cleiton", 10.59f);
-         
-
-            Console.WriteLine(livro.ToString());
-
+            Console.WriteLine(new Livro("as Aventuras de Josiscleiton", "Cleiton", 10.59f).ToString());
             Console.ReadLine();
+
+          
         }
 
       
