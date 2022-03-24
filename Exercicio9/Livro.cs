@@ -6,19 +6,19 @@ using System.Threading.Tasks;
 
 namespace Exercicio9
 {
-    struct Livro
+    internal struct Livro
     {
         public string titulo { get; private set; }
         public string autor { get; private set; }
         public float valor { get; private set; }
 
-        public Livro(string titulo, string autor, float valor) : this()
+        public Livro(string titulo, string autor, float valor) 
         {
             this.titulo = titulo;
             this.autor = autor;
             this.valor = valor;
         }
-        public string ToString()
+        public override string ToString()
         {
 
 
